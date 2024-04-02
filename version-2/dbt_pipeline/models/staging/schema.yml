@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: stg_cewl_v2
+    columns:
+      - name: chgerrobjid
+        tests:
+          - not_null
+
+  - name: stg_code_value
+    columns:
+      - name: code_value
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_prsnl_alias
+    columns:
+      - name: prsnl_alias_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_prsnl
+    columns:
+      - name: person_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_interface_charge
+    columns:
+      - name: interface_charge_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_charge
+    columns:
+      - name: charge_item_id
+        tests:
+          - unique
+          - not_null

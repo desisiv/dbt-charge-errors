@@ -1,0 +1,161 @@
+version: 2
+
+models:
+  - name: cewl_items_v2
+    description: This table has the active items for the Charge Error Worklist
+
+    columns:
+      - name: chgerrobjid
+        description: This is a unique identifier for a charge error
+        tests:
+          - not_null
+
+      - name: sp_flag
+      
+      - name: group_cnt
+
+      - name: group_crd_ind
+
+      - name: group_chg_cnt
+
+      - name: group_chg_rvsl_cnt
+
+      - name: firsterr
+
+      - name: firsterrjuly
+
+      - name: dosmarch
+
+      - name: test_patient
+
+      - name: lab_test_patient
+
+      - name: LastCngUTCDTime
+
+      - name: RslvDate
+
+      - name: rcvowner
+
+      - name: svcprov
+ 
+      - name: entsrcname
+
+      - name: batchid
+      
+      - name: transtype
+
+      - name: errcd
+
+      - name: errtext
+
+      - name: firsterrdtime
+
+      - name: mrn
+
+      - name: encid
+
+      - name: ecdno
+      
+      - name: spsid
+
+      - name: spsissuer
+
+      - name: svcid
+
+      - name: svcidissid
+
+      - name: svcname
+
+      - name: ovrdsvcname
+
+      - name: transcommonid
+
+      - name: entextrnid
+
+      - name: ordno
+
+      - name: servicedate
+
+      - name: qty
+
+      - name: rxqty
+
+      - name: dseqty
+
+      - name: ndcqty
+
+      - name: extpriceamt
+
+      - name: priceovrdind
+
+      - name: encprov
+
+      - name: enctype
+
+      - name: encstrdtime
+
+      - name: encstpdtime
+
+      - name: encsts
+
+      - name: encloc
+
+      - name: clinsvc
+
+      - name: enccreuser
+
+      - name: errcredtime
+
+      - name: checkinuser
+
+      - name: ignorersn
+
+      - name: ignoredate
+
+      - name: entproccdval
+
+      - name: entchgmodfval
+
+      - name: chgstpdtime
+
+      - name: rvusurgeryflag
+
+      - name: placevalue
+
+      - name: labonly
+
+      - name: fhcchg
+
+      - name: billinglocation
+
+      - name: actingaspcp
+
+      - name: perfhpid
+
+      - name: perfhp
+
+      - name: ordhpid
+
+      - name: ordhp
+
+      - name: supvhpid
+
+      - name: supvhp
+
+      - name: refhpid
+
+      - name: refhp
+
+      - name: primhlthplan
+
+      - name: primpayor
+
+      - name: sechlthplan
+
+      - name: secpayor
+
+      - name: glucose
+
+      - name: lab
+
+      - name: pathology

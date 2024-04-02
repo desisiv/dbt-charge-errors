@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_cewl
+    columns:
+      - name: chgerrobjid
+        tests:
+          - unique
+          - not_null

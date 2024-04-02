@@ -1,0 +1,40 @@
+
+name: 'dbt_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+
+vars:
+  time_zone: America/Chicago
+  cewl_catalog: soariandss
+  cewl_schema: customer
+  dss_catalog: soariandss
+  dss_schema: smsdss
+  dbo_schema: dbo
+  mill_catalog: millennium
+  mill_schema: v500
+  analytics_catalog: analytics
+  analytics_schema: datalake
+
+models:
+  dbt_pipeline:
+    materialized: table
+    staging:
+      materialized: view

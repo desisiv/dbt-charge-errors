@@ -1,0 +1,15 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: desisiv
+      password:
+      catalog: analytics
+      host: trino
+      port: 9080
+      schema: datalake
+      threads: 1
+config:
+    send_anonymous_usage_stats: False
